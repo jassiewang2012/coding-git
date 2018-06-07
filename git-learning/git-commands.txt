@@ -21,5 +21,5 @@
 18. git fetch - Fetches work from the remote into the local copy
 19. git margin origin/master - Merges origin/master into your local branch
 20. git push origin <branch_name> - Push a local branch to the origin remote
-
+21. git remote set-url origin git@github.com:User/UserRepo.git - used to change the url of an existing remote repository
 
