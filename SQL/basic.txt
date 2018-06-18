@@ -1,25 +1,34 @@
 1. CREATE TABLE creates a new table.
-
-
+   –– CREATE TABLE celebs (
+   id INTEGER, 
+   name TEXT, 
+   age INTEGER
+    );
 
 2. INSERT INTO adds a new row to a table.
 
-
+   –– INSERT INTO celebs (id, name, age) 
+    VALUES (1, 'Justin Bieber', 21);
 
 
 3. SELECT queries data from a table.
 
-
+     ––– SELECT * FROM celebs;
 
 
 4. UPDATE edits a row in a table.
-
+    ––– UPDATE celebs 
+        SET age = 22 
+        WHERE id = 1; 
 
 
 
 5. ALTER TABLE changes an existing table.
 
-
+     ––– ALTER TABLE celebs 
+     ADD COLUMN twitter_handle TEXT;
 
 
 6. DELETE FROM deletes rows from a table.
+
+    –– DELETE FROM celebs WHERE twitter_handle IS NULL; 
