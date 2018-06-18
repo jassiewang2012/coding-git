@@ -1,0 +1,25 @@
+1. CREATE TABLE creates a new table.
+
+
+
+2. INSERT INTO adds a new row to a table.
+
+
+
+
+3. SELECT queries data from a table.
+
+
+
+
+4. UPDATE edits a row in a table.
+
+
+
+
+5. ALTER TABLE changes an existing table.
+
+
+
+
+6. DELETE FROM deletes rows from a table.
