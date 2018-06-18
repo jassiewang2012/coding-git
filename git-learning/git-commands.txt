@@ -23,3 +23,4 @@
 20. git push origin <branch_name> - Push a local branch to the origin remote
 21. git remote set-url origin git@github.com:User/UserRepo.git - used to change the url of an existing remote repository
 
+22. git remote add origin https://username@stash/scm/PROJECT/repo.git  – add a remote 
