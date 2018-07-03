@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="includes/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
+      <link rel="stylesheet" href="includes/main.css" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body class="text-center">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand"></h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="#" id="count-down-btn">Weather</a>
+
+          </nav>
+         
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        
+          <!-- Form code begins -->
+
+     <div class="row">  
+        <div class="form-group col-sm-3">
+    <input type="text" class="form-control" id="trip-place" aria-describedby="tripHelp" placeholder="Where?">
+    <small id="tripHelp" class="form-text text-muted d-none" >Please type the city of trip you are going to.</small>
+  </div>
+      <div class="form-group col-sm-4"> <!-- Date input -->
+        <input class="form-control" id="date" name="date" placeholder="Day(MM/DD/YYYY)" type="text"/>
+      </div>
+      
+      <div class="form-group col-sm-3"> <!-- Time input -->
+        <input class="form-control" id="time" name="time" placeholder="When(HH:MM)" type="text"/>
+      </div>
+      
+      <div class="form-group col-sm-2"> <!-- Submit button -->
+        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+      </div>
+               
+     </div>
+    
+     <!-- Form code ends --> 
+        
+          
+          <div class="row">  
+          <div class="bootstrap-iso">
+ <div class="container-fluid">
+   
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="slide0">
+
+    </div>
+    <div class="carousel-item" id="slide1">
+ 
+    </div>
+    <div class="carousel-item" id="slide2">
+     
+    </div>
+  </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+         
+
+
+  
+
+    
+  
+ </div>
+</div>
+              </div>
+        <div id="count-down-content">
+          
+       
+        <h1 class="cover-heading">Counting Down</h1>
+          <p class="lead trip-sumary">Spencer and I will go to Guangzhou, China~~~</p> 
+          <div id="counting-down-time" class="d-none">
+            <div class="row">
+              <div class="col-sm-2">
+              </div>
+         
+            <div class="countdown col-sm-1" data-short="Day" data-full="Day(s)">
+              <p id="day">
+              </p>
+              <p class="label">
+                Days(s)
+              </p>
+            </div>
+              
+            <div class="sep col-sm-1">
+              <p>
+                :
+              </p>
+            </div>
+            <div class="countdown col-sm-1" data-short=" Hours" data-full=" Hours(s)">
+              <p id="hour">
+              </p>
+              <p class="label">
+                Hours(s)
+              </p>
+            </div>
+            <div class="sep col-sm-1">
+              <p>
+                :
+              </p>
+            </div>
+            <div class="countdown col-sm-1" data-short="Minute" data-full="Minute(s)">
+              <p id="minute">
+              </p>
+              <p class="label">
+                Minute(s)
+              </p>
+            </div>
+            <div class="sep col-sm-1">
+              <p>
+                :
+              </p>
+            </div>
+            <div class="countdown col-sm-1" data-short="Second" data-full=" Second(s)">
+              <p id="second">
+              </p>
+              <p class="label">
+               Second(s)
+              </p>
+            </div>
+              <div class="col-sm-2">
+                
+              </div>
+            </div>
+             
+          </div>
+        <section id="venues">
+          <div class="row"> 
+      <div class="weather col-sm-5" id="venue1">
+
+      </div>
+      <div class="weather col-sm-5" id="venue2">
+
+      </div>
+          </div>
+          <div class="row"> 
+      <div class="weather col-sm-5" id="venue3">
+
+      </div>
+        <div class="weather col-sm-5" id="venue4">
+
+      </div>
+          </div>
+           <div class="row"> 
+      <div class="weather col-sm-5" id="venue5">
+
+      </div>
+        <div class="weather col-sm-5" id="venue6">
+
+      </div>
+          </div>
+    </section>
+    </div>
+         <div id="weather-content" class="d-none">
+          
+       
+        <h1 class="cover-heading" >Weather</h1>
+  <p class="lead trip-sumary">Spencer and I will go to Guangzhou, China~~~</p> 
+    <section id="weather">
+       <div class="row">  
+        
+     
+        <div class="weather col-sm-5" id="weather1">
+   
+        </div>
+        <div class="weather col-sm-5" id="weather2">
+
+        </div>
+          </div>
+       <div class="row"> 
+        <div class="weather col-sm-5" id="weather3">
+
+        </div>
+        <div class="weather col-sm-5" id="weather4">
+
+        </div>
+         </div>
+      <div class="row"> 
+        <div class="weather col-sm-5" id="weather5">
+
+        </div>
+        <div class="weather col-sm-5" id="weather6">
+
+        </div>
+         </div>
+           </section>
+           </div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p id="footer-credit"></p>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="includes/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="includes/weather.js"></script>
+    <script src="includes/fourSquare.js"></script>
+        <script src="includes/main.js"></script>
+    
+  
+
+
+
+
+  </body>
